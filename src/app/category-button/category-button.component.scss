@@ -1,0 +1,40 @@
+.category-buttons{
+  width: 156px;
+  height: 51px;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 42px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 18px;
+}
+
+.category-buttons:hover{
+  filter: contrast(120%);
+  transition: filter 0.3s ease;
+}
+
+@media only screen and (min-width: 744px) {
+  .category-buttons{
+    font-size: 32px;
+    width: 276px;
+    height: 90px;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .category-buttons{
+    height: 95px;
+    width: 281px;
+    left: 677px;
+    top: 0px;
+    border-radius: 4px;
+    padding: 16px 36px 16px 36px;
+    margin: 0 18px 0 0;
+  }
+}

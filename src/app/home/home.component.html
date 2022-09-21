@@ -1,1 +1,9 @@
-<p>Home works</p>
+<main class="main-content">
+  <h1 class="select-quizz">Select a Quiz</h1>
+  <div class="categories-div">
+  <div *ngFor="let item of category; let i = index">
+    <app-category-button (click)="fetchQuizzes(item)" [category]="item" [backgroundColor]="backgroundColors[i]"></app-category-button>
+  </div>
+</div>
+  <app-redirect-popup [timer]="5000" *ngIf="redirectState"></app-redirect-popup>
+</main>
