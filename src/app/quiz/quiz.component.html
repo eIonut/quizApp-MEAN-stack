@@ -1,0 +1,34 @@
+<main class="main-content">
+  <div class="top-content">
+    <div class="question-div">
+      <p>{{question}}</p>
+    </div>
+    <div class="topic-div">
+      <p>{{topic}}</p>
+    </div>
+  </div>
+
+<!--  answers div-->
+  <div class="answers-container">
+  <div class="answer" *ngFor="let answer of answers; let i=index">
+    <button class="answer-btn" [ngClass]="{'checked-answer': checkItemsStatus[i]}" (click)="checkAnswer(i)">{{i+1}}. {{answer}}</button>
+  </div>
+  </div>
+
+<!--  <p>Score: {{currentScore}}</p>-->
+  <div class="bottom-content">
+    <div class="questions-p">
+      <p>{{questionIndex+1}}  /  {{numberOfQuestions}}</p>
+    </div>
+    <div>
+      <p class="timer-p">{{timer}}s<mat-icon class="timer-icon">timer</mat-icon></p>
+    </div>
+  </div>
+
+  <div class="button-div">
+  <button class="next-question-btn"
+          [ngClass]="{'enable-button' : flag == true }"
+          [disabled]="flag == false" (click)="nextQuestion()">Next question <mat-icon>keyboard_arrow_right</mat-icon></button>
+  </div>
+</main>
+

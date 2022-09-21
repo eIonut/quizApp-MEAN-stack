@@ -1,0 +1,102 @@
+.main-content{
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/score-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 45% 15%;
+}
+
+.score-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.score-container p{
+  font-family: "Bebas Neue";
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.home-btn, .restart-btn{
+  border: none;
+  font-family: "Montserrat";
+  width: 159px;
+  height: 51px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-btn:hover, .restart-btn:hover{
+  filter: contrast(120%);
+  transition: filter 0.3s ease;
+}
+
+.home-btn{
+  background: #3F3B1C;
+}
+
+.restart-btn{
+  background: #B9AE5A;
+}
+
+@media only screen and (min-width: 744px) {
+  .home-btn, .restart-btn{
+    width: 269px;
+    font-size: 32px;
+    height: 95px;
+  }
+
+  .score-container mat-icon{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .score-container p{
+    padding-bottom: 32px;
+    font-size: 60px;
+
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .main-content{
+    padding: 0;
+    background-image: url('/assets/score-img-desktop.jpg');
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .score-container{
+      padding-right: 10%;
+  }
+
+  .score-container p{
+    color: #fff;
+    text-shadow: 2px 1px 0 #000;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .score-container{
+    padding-right: 15%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .score-container{
+    padding-right: 20%;
+  }
+}

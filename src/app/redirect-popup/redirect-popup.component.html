@@ -1,0 +1,9 @@
+<div class="popup" [ngClass]="{'hide': !disappear, 'show': disappear}">
+  <button class="close-popup" (click)="closePopup()"><mat-icon class="close-icon">close</mat-icon></button>
+  <div class="inner-popup">
+    <p>Select a category first!</p>
+  </div>
+  <div class="myBar" #progress>
+  </div>
+
+</div>

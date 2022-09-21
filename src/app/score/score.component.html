@@ -1,0 +1,7 @@
+<main class="main-content">
+<div class="score-container">
+  <p>SCORE: {{score}} / {{questionNumber}}</p>
+  <button class="mb-4 home-btn" [routerLink]="['/home']">Home<mat-icon>home</mat-icon></button>
+  <button class="restart-btn" (click)="fetchQuiz()">Restart quiz<mat-icon>restore</mat-icon></button>
+</div>
+</main>
