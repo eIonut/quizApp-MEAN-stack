@@ -17,6 +17,7 @@
     "mongoose": "^6.6.1"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.3",
     "nodemon": "^2.0.20"
   }
 }
