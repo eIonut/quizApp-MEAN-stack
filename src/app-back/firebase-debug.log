@@ -1,0 +1,44 @@
+[debug] [2022-09-22T07:13:59.970Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T07:13:59.972Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ionut\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2022-09-22T07:13:59.972Z] CLI Version:   11.9.0
+[debug] [2022-09-22T07:13:59.972Z] Platform:      win32
+[debug] [2022-09-22T07:13:59.972Z] Node Version:  v18.6.0
+[debug] [2022-09-22T07:13:59.973Z] Time:          Thu Sep 22 2022 10:13:59 GMT+0300 (Eastern European Summer Time)
+[debug] [2022-09-22T07:13:59.973Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T07:14:00.022Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T07:14:00.023Z] > authorizing via signed-in user (enacheionut2399@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\quiz-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-22T07:14:01.737Z] Using project from CLI flag: quiz-app-4a599
+[debug] [2022-09-22T07:14:01.739Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/quiz-app-4a599 [none]
+[debug] [2022-09-22T07:14:02.153Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/quiz-app-4a599 200
+[debug] [2022-09-22T07:14:02.153Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/quiz-app-4a599 {"projectId":"quiz-app-4a599","projectNumber":"10647201998","displayName":"quiz-app","name":"projects/quiz-app-4a599","resources":{"hostingSite":"quiz-app-4a599"},"state":"ACTIVE","etag":"1_3cb7025d-a0a2-4003-831d-9fa481de772b"}
+[info] i  Using project quiz-app-4a599 (quiz-app) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
