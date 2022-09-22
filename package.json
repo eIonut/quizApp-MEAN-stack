@@ -37,6 +37,7 @@
     "node": "18.x"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^14.1.0",
     "@types/jasmine": "~4.0.0",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",
