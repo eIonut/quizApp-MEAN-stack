@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/api/v1/quizzes', quizzes);
 app.use(errorHandlerMiddleware);
 
-const port =  process.env.PORT;
+const port =  process.env.PORT || 3000;
 
 const start = async () => {
     try {
